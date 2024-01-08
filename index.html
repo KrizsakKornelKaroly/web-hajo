@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bismarck in motion</title>
+    <style>
+    .fent{
+        background-color: black;
+        height: 450px;
+        animation: egszin 10s;
+        animation-fill-mode: forwards;
+    }
+    .lent{
+        margin: 0 auto;
+        display: block;
+        background-color: lightblue;
+        height: 500px;
+    }
+    body{
+        
+        margin: 0;
+    }
+    /*
+    .napocska{
+        width: 200px;
+        position: absolute;
+        left: 25px;
+        top: 400px;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        display: block;
+        position: relative;
+        animation: x 2s linear infinite alternate, y 2s infinite cubic-bezier(0,500,1,500);
+    }*/
+    .napocska{
+        position: absolute;
+        width:200px;
+        left:25px;
+        top: 200px;
+        animation: x 7s linear, y 7s cubic-bezier(0,500,1,500);
+        animation-fill-mode: forwards;
+    }
+
+    .bismarck{
+        width: 500px;
+        animation-name: uszika;
+        animation-duration: 9s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        display: block;
+        position: relative;
+    }
+
+    @keyframes x {
+        from{
+            left: 0%;
+        }
+        to {
+            left: 80%;
+            transform: rotate(1440deg);
+        }
+    }
+    @keyframes y {
+        to {
+            top: 199.5px;
+        }
+    }
+    @keyframes uszika {
+        from{
+            top: 0;
+            left: 0;
+        }
+        to{
+            top: 0;
+            left: 70%;
+        }
+    }
+    @keyframes egszin {
+        0%{
+            background-color: black;
+        }
+        50%{
+            background-color: aqua;
+        }
+        100%{
+            background-color: black;
+        }
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="fent">
+        <img src="./illustrator-tutorial-cartoon-illustration-sun-b4dfc215954d18207639065dcab9d64a.png" alt="" class="napocska">
+        
+    </div>
+
+    <div class="lent">
+        <img src="./heavy-cruiser-german-battleship-tirpitz-world-of-warships-german-battleship-bismarck-dreadnought-ship-947da51207020491d304d2251a421dc7.png" alt="Bismarck" class="bismarck">
+    </div>
+
+</body>
+</html>
